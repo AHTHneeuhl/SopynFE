@@ -6,3 +6,18 @@ datasource db {
   provider = "mongodb"
   url      = env("MONGODB_URI")
 }
+
+model Book {
+  id        String     @id @default(uuid()) @map("_id")
+  title     String
+  author    String
+  status    BookStatus
+  createdAt DateTime   @default(now())
+  updatedAt DateTime   @updatedAt
+}
+
+enum BookStatus {
+  READING
+  COMPLETED
+  UNREAD
+}
