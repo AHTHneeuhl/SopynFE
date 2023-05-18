@@ -1,16 +1,36 @@
 {
-  "name": "SopynFE",
+  "name": "web-shelf-backend",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "dev": "nodemon src/index.ts",
+    "start": "nodemon"
+  },
   "keywords": [],
-  "author": "",
+  "author": "Shubham Patrick",
   "license": "ISC",
   "devDependencies": {
+    "@types/body-parser": "^1.19.2",
+    "@types/compression": "^1.7.2",
+    "@types/cookie-parser": "^1.4.3",
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.17",
     "@types/node": "^18.15.1",
+    "nodemon": "^2.0.22",
     "prisma": "^4.11.0",
     "ts-node": "^10.9.1",
     "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "@apollo/server": "^4.7.0",
+    "@prisma/client": "^4.13.0",
+    "body-parser": "^1.20.2",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "graphql": "^16.6.0"
   }
 }
